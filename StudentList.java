@@ -3,7 +3,11 @@ import java.text.*;
 import java.util.*;
 public class StudentList {
 	public static void main(String[] args) {
-
+        if(args.length!=1) {
+			System.out.println("Invalid number of arguments");
+			System.out.println("Exiting programme");
+			System.exit(1);
+	    }
 //		Check arguments
 		if(args[0].equals("a")) {
 			System.out.println("Loading data ...");			
@@ -102,6 +106,11 @@ public class StudentList {
 
 			}
 			System.out.println("Data Loaded.");				
+		}
+		else {
+			System.out.println("Invalid number of arguments");
+			System.out.println("Exiting programme");
+			System.exit(1);
 		}
 	}
 }
